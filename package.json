@@ -4,15 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./dist && webpack",
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@swc/cli": "^0.1.51",
-    "@swc/core": "^1.2.98"
+    "@swc/core": "^1.2.98",
+    "css-loader": "^6.4.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.4.0",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
